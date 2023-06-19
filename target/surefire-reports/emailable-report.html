@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">317</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.authmind.cucumber.testrunners.TestRunner_UI</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1646456026219</td><td rowspan="2">177</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.authmind.cucumber.testrunners.TestRunner_UI#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Create new users in application&quot;</td><td>&quot;Admin_FunctionalityVerification&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">cucumber.runtime.CucumberException: Could not create a cucumber expression for &apos;user creats playbook {*.*} for shadow access from excel&apos;.
+It appears you did not register parameter type. The details are in the stacktrace below.
+You can find the documentation here: https://docs.cucumber.io/cucumber/cucumber-expressions/
+	at io.cucumber.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:93)
+	at io.cucumber.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:65)
+	at io.cucumber.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:54)
+	at cucumber.runtime.java.JavaStepDefinition.createExpression(JavaStepDefinition.java:44)
+	at cucumber.runtime.java.JavaStepDefinition.&lt;init&gt;(JavaStepDefinition.java:36)
+	at cucumber.runtime.java.JavaBackend.addStepDefinition(JavaBackend.java:146)
+	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:65)
+	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:42)
+	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:82)
+	at cucumber.runner.Runner.&lt;init&gt;(Runner.java:28)
+	at cucumber.runner.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:44)
+	at cucumber.runner.ThreadLocalRunnerSupplier.access$000(ThreadLocalRunnerSupplier.java:15)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:24)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:21)
+	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+	at cucumber.runner.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:66)
+	at com.authmind.cucumber.AbtractTestNGCucumberTest.runScenario(AbtractTestNGCucumberTest.java:33)
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 22:
+
+user creats playbook {*.*} for shadow access from excel
+                     ^---^
+Undefined parameter type &apos;*.*&apos;.
+Please register a ParameterType for &apos;*.*&apos;
+	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteParameter(CucumberExpression.java:101)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:55)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteExpression(CucumberExpression.java:116)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:57)
+	at io.cucumber.cucumberexpressions.CucumberExpression.&lt;init&gt;(CucumberExpression.java:40)
+	at io.cucumber.cucumberexpressions.ExpressionFactory.createExpression(ExpressionFactory.java:39)
+	at io.cucumber.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:63)
+	... 46 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.authmind.cucumber.testrunners.TestRunner_UI#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Add new known Applications&quot;</td><td>&quot;Admin_FunctionalityVerification&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">cucumber.runtime.CucumberException: Could not create a cucumber expression for &apos;user creats playbook {*.*} for shadow access from excel&apos;.
+It appears you did not register parameter type. The details are in the stacktrace below.
+You can find the documentation here: https://docs.cucumber.io/cucumber/cucumber-expressions/
+	at io.cucumber.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:93)
+	at io.cucumber.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:65)
+	at io.cucumber.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:54)
+	at cucumber.runtime.java.JavaStepDefinition.createExpression(JavaStepDefinition.java:44)
+	at cucumber.runtime.java.JavaStepDefinition.&lt;init&gt;(JavaStepDefinition.java:36)
+	at cucumber.runtime.java.JavaBackend.addStepDefinition(JavaBackend.java:146)
+	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:65)
+	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:42)
+	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:82)
+	at cucumber.runner.Runner.&lt;init&gt;(Runner.java:28)
+	at cucumber.runner.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:44)
+	at cucumber.runner.ThreadLocalRunnerSupplier.access$000(ThreadLocalRunnerSupplier.java:15)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:24)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:21)
+	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+	at cucumber.runner.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:66)
+	at com.authmind.cucumber.AbtractTestNGCucumberTest.runScenario(AbtractTestNGCucumberTest.java:33)
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 22:
+
+user creats playbook {*.*} for shadow access from excel
+                     ^---^
+Undefined parameter type &apos;*.*&apos;.
+Please register a ParameterType for &apos;*.*&apos;
+	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteParameter(CucumberExpression.java:101)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:55)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteExpression(CucumberExpression.java:116)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:57)
+	at io.cucumber.cucumberexpressions.CucumberExpression.&lt;init&gt;(CucumberExpression.java:40)
+	at io.cucumber.cucumberexpressions.ExpressionFactory.createExpression(ExpressionFactory.java:39)
+	at io.cucumber.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:63)
+	... 46 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

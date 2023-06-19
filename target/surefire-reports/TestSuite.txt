@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.072 s <<< FAILURE! - in TestSuite
+runScenario(com.authmind.cucumber.testrunners.TestRunner_UI)  Time elapsed: 0.105 s  <<< FAILURE!
+cucumber.runtime.CucumberException: 
+Could not create a cucumber expression for 'user creats playbook {*.*} for shadow access from excel'.
+It appears you did not register parameter type. The details are in the stacktrace below.
+You can find the documentation here: https://docs.cucumber.io/cucumber/cucumber-expressions/
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: 
+This Cucumber Expression has a problem at column 22:
+
+user creats playbook {*.*} for shadow access from excel
+                     ^---^
+Undefined parameter type '*.*'.
+Please register a ParameterType for '*.*'
+
+runScenario(com.authmind.cucumber.testrunners.TestRunner_UI)  Time elapsed: 0.005 s  <<< FAILURE!
+cucumber.runtime.CucumberException: 
+Could not create a cucumber expression for 'user creats playbook {*.*} for shadow access from excel'.
+It appears you did not register parameter type. The details are in the stacktrace below.
+You can find the documentation here: https://docs.cucumber.io/cucumber/cucumber-expressions/
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: 
+This Cucumber Expression has a problem at column 22:
+
+user creats playbook {*.*} for shadow access from excel
+                     ^---^
+Undefined parameter type '*.*'.
+Please register a ParameterType for '*.*'
+

@@ -1,0 +1,6 @@
+com\authmind\cucumber\testrunners\TestRunner_API.class
+com\authmind\cucumber\pages\Authmind_AdminPage.class
+com\authmind\cucumber\pageobjectmanager\PageObjectManager.class
+com\authmind\cucumber\stepdefinition\BaseLine_ShadowAccessStepDefinition.class
+com\authmind\cucumber\stepdefinition\AbstractSteps.class
+com\authmind\cucumber\stepdefinition\Admin_FunctionalityStepDefinition.class
